@@ -1,0 +1,226 @@
+/* Commancez par comprendre le BoxModel : */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+.wrapper {
+	width: 100%; /* la page prend 100% de la margeur de l'ecran = 1170px */
+	margin: auto;
+}
+
+/*
+CSS gradients (Les dégradés du css) vous permettent d'afficher des transitions fluides entre deux ou plusieurs couleurs spécifiées..
+
+Unité de longueur et de largeur absolut ( il ne changerons jamais peut importe les dimentions de l'ecran
+Absolute Lengths:
+    cm	centimeters
+    mm	millimeters
+    in	inches (1in = 96px = 2.54cm)
+    px  pixels (1px = 1/96th of 1in)
+    pt	points (1pt = 1/72 of 1in)
+    pc	picas (1pc = 12 pt)
+
+Unité de longueur et de largeur Relative ( il ne changerons jamais peut importe les dimentions de l'ecran
+
+Relative Lengths:
+    em Par rapport à la taille de la police de l'élément (2em signifie 2 fois la taille de la police actuelle)
+    ex Par rapport à la hauteur x de la police actuelle (rarement utilisée)
+    ch Par rapport à la largeur du "0" (zéro)
+    rem Par rapport à la taille de la police de l'élément racine
+    vw Par rapport à 1% de la largeur de la fenêtre *
+    vh Par rapport à 1% de la hauteur de la fenêtre *
+    vmin Par rapport à 1% de la dimension plus petite de la fenêtre *
+    vmax Par rapport à 1% de la plus grande dimension de la fenêtre *
+    % Par rapport à l'élément parent
+
+The position Property
+    static
+    relative
+    fixed
+    absolute
+    sticky
+
+*/
+
+header {
+	/* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg); */
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/cover\ -3.jpg);
+	height: 100vh;
+
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+
+/* la facon avec laquel nos menus sont affichés  */
+.nav-area li {
+	display: inline-block;
+}
+
+/* il ne suffit pas de donner du style à la balise extérieure pour que le style passe aux balises intérieures */
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+/* Sélectionnez et stylisez un lien lorsque vous le survolez
+   donner du style seulement au balises a qui sont a l'interieur de la balise li avec la classe nav-area */
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.logo img {
+	float: left;
+	width: 10vw;
+	padding: 15px 15px;
+}
+
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.welcome-text h2 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+
+
+/* Body (card) */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	font-family: arial;
+}
+
+.price {
+	color: grey;
+	font-size: 22px;
+	margin-top: 5px;
+
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	margin-top: 5px;
+	color: white;
+	background-color: #00fecb;
+	text-align: center;
+	cursor: pointer;
+	width: 50%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.7;
+}
+
+
+/* position: possition du composant par rapport au autres composants, nous verrons ca plus en details prochainement */
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 3px;
+	background-color: #00fecb;
+	color: white;
+	text-align: center;
+}
+ 
+/*resposive*/
+/*
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+*/
+
+
+.headerServices h2 {
+	text-align:center; 
+	color:blue
+}
