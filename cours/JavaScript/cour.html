@@ -1,0 +1,148 @@
+JS: 
+
+Variables:
+var x = 5;
+var y = 6;
+var z = x + y;
+
+Using let and const (ES6)
+
+Les règles générales de construction des noms de variables (identificateurs uniques) sont les suivantes:
+    Les noms peuvent contenir des lettres, des chiffres, des traits de soulignement et des signes dollar.
+    Les noms doivent commencer par une lettre
+    Les noms peuvent également commencer par $ et _
+    Les noms sont sensibles à la casse (y et Y sont des variables différentes)
+    Les mots réservés (comme les mots clés JavaScript) ne peuvent pas être utilisés comme noms
+
+L'opérateur d'affectation:  x = x + 2;
+
+
+
+Opérateurs:
+Arethmetiques:
+    + Ajout
+    - Soustraction
+    * Multiplication
+    ** Exponentiation (ES2016)
+    / Division
+    % Module (reste)
+    ++ Incrément
+    - Décrémenter
+
+    ex: 
+        var x = 10;
+        x += 5;
+
+        var txt1 = "Islem";
+        var txt2 = "Merzoug";
+        var txt3 = txt1 + " " + txt2;
+
+        var txt1 = "What a very ";
+        txt1 += "nice day";
+
+Comparison ( a utiliser generalement dans les structures de contrôle):
+    == égal à
+    === valeur égale et type égal
+    ! = différent de
+    ! == valeur différente ou type différent
+    > supérieur à
+    <	Inférieur à
+    > = supérieur ou égal à
+    <= inférieur ou égal à
+    ? opérateur ternaire
+logiques:
+&&	logical and
+||	logical or
+!	logical not
+
+structures de contrôle 
+    Utilisez "if" pour spécifier un bloc de code à exécuter, si une condition spécifiée est vraie
+    Utilisez "else" pour spécifier un bloc de code à exécuter, si la même condition est fausse
+    Utilisez "else if" pour spécifier une nouvelle condition à tester, si la première condition est fausse
+    Utilisez "switch" pour spécifier de nombreux blocs de code alternatifs à exécuter
+
+    if (hour < 18) {
+        greeting = "Good day";
+    }
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+  default:
+    text = "No value found";
+}
+
+
+boucles 
+cars [] = [1, 2, 3]
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+
+DOM:
+The getElementById Method: 
+ document.getElementById("demo").innerHTML = "Hello World!";
+
+  The innerHTML Property:
+  - Le moyen le plus simple d'obtenir le contenu d'un élément consiste à utiliser la propriété innerHTML.
+  - La propriété innerHTML peut être utilisée pour obtenir ou modifier n'importe quel élément HTML, y compris <html> et <body>.
+
+
+
+JavaScript HTML DOM Document:
+
+Finding HTML Elements:
+  document.getElementById(id) : Recherche un élément par identifiant d'élément
+  document.getElementsByTagName(name) : Recherche des éléments par nom de balise
+  document.getElementsByClassName(nom) : Recherche des éléments par nom de classe
+
+
+
+Changing HTML Elements:
+  NB: document.getElementById(id) donne un exemple element
+  element.innerHTML = nouveau_contenu : html Changer le HTML interne d'un élément
+  element.attribute = nouvelle_valeur : Changer la valeur d'attribut d'un élément HTML
+  element.style.property = nouveau_style : Changer le style d'un élément HTML
+  
+
+  element.setAttribute (attribut, valeur) Changer la valeur d'attribut d'un élément HTML
+Adding and Deleting Elements:
+  document.createElement(element)	: Créer un élément HTML
+  document.removeChild(element)	: Supprimer un élément HTML
+  document.appendChild(element)	: Ajouter un élément HTML
+  document.replaceChild(new, old)	: Remplacer un élément HTML
+  document.write(text)	: Ecrire dans le flux de sortie HTML
+

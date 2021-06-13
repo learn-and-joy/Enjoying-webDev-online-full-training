@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Un bouton qui lorsque vous cliquez dessus, vous avez un chiffre qui s'incrémente, ce chiffre doit être affiché sur l'interface du site ainsi que sur la console 
+    -->
+
+    <b>computer score:</b>
+    <p id="computerScore">0</p>
+
+    <button type="button" onclick="incrementation()">Go</button><br>
+
+    <script>
+        function incrementation() {
+            var computerScore = document.getElementById('computerScore');
+            var number = computerScore.innerHTML;
+            number++;
+            computerScore.innerHTML = number;
+            console.log(number);
+        }
+    </script>
+</body> 
+</html>

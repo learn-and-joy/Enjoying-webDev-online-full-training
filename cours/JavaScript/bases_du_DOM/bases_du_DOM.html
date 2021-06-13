@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- html and css -->
+    <h1 id="id01">Old Heading</h1>
+
+    <!-- events -->
+    <div>
+        <button id="btn" onclick="showContent()"> Cliquez ici </button>
+    </div>
+
+    <div id="app">
+        <div class="entry">
+            <label>Nom de l'invité:
+                <input type="text" id="guest" name="guest" placeholder="Invité.."/>
+            </label>
+        </div>
+        <!-- Utilisons <template> pour contenir du contenu qui sera masqué lors du chargement de la page. 
+            Utilisons JavaScript pour l'afficher: -->
+        <h2  id="company_name">Learn and Joy</h2>
+        <template id="temp">
+            <img src="../../../images/logo+name.png" width="214">
+        </template>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="bases_du_DOM.js"></script>
+
+    
+</body>
+</html>

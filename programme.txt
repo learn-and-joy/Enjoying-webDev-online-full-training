@@ -1,0 +1,40 @@
+16h05 16h20:
+  - ICEBREAKER: ask a question to the person you want
+  - La responsivité des composants on la laisse apres avoir fini avec le JS
+
+16h20 - 17h00:
+  - quiz -5 
+
+17h00 17h05:
+  - Pause
+
+17h05 18h00:
+  - Mysql WAMPserver ( slides )
+  - Cours
+
+18h00 18h05.
+  - Pause
+
+18h05 19h00:
+  - workshop tout le monde ensemble:
+	  Creez deux table avec lequel on va travailler la serance prochaine pour creer une api avec PHP
+      user(id, email, password)
+      Service(id, price, description, details)
+      Contact(id, #userId, Prenom, Nom, Country, Sujet)
+    Charger la base 
+    Selectionner tout les Services proposés
+    
+
+
+
+Quiz:
+  - Requetes sql
+----------------------------
+
+next session: 
+  - php and mysql database connection
+
+
+
+
+
